@@ -1,0 +1,344 @@
+﻿@model BookViewModel
+@inject UserManager<ApplicationUser> userManager
+@{
+    ViewData["Title"] = "Books";
+}
+
+<style>
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: right;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+</style>
+<div class="wrapper">
+
+    <!--Content-Header-->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">@ResourceWeb.lbBooks</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/Admin/Home/Index">@ResourceWeb.lbHomePage</a></li>
+                        <li class="breadcrumb-item active">@ResourceWeb.lbManageBook</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Content-Header-->
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-start">
+                        <h3 class="card-title" style="margin-left:20px" id="tittle">@ResourceWeb.lbBooks</h3>
+                        <div class="card-tools ">
+                            <!-- Button trigger modal -->
+                            @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("SuperAdmin")))
+                            {
+                                <button type="button" style="margin-top:-5px"
+                                        class="btn btn-outline-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="Reset()">
+                                    @ResourceWeb.lbBtnSaveNewBook
+                                </button>
+                            }
+
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <!-- Tab links -->
+                        <div class="tab">
+                            <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Categories')">@ResourceWeb.lbBooks</button>
+                            <button class="tablinks" onclick="openCity(event, 'LogCategories')">@ResourceWeb.LogBooks</button>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div id="Categories" class="tabcontent">
+                            <table id="tableCaregory" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>@ResourceWeb.lbNameBook</td>
+                                        <td>@ResourceWeb.lbImageBook</td>
+                                        <td>@ResourceWeb.lbNameSubCategory</td>
+                                        <td>@ResourceWeb.lbNameCategory</td>
+                                        <td>@ResourceWeb.lbAuthor</td>
+                                        <td>@ResourceWeb.lbPublish</td>
+                                        <td>@ResourceWeb.lbEvents</td>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var item in Model.Books)
+                                    {
+                                        <tr>
+                                            <td>@item.Name</td>
+                                            <td><img src="~/Images/Book/@item.ImageName" alt="Alternate Text" class="img-bordered img-circle img-circle" style="width:50px;height:50px;"></td>
+                                            <td>@item.SubCategory.Name</td>
+                                            <td>@item.Category.Name</td>
+                                            <td>@item.Author</td>
+
+                                            <td><input type="checkbox" disabled checked="@item.Publish" style="width:35px;height:35px;" /></td>
+
+                                            <td>
+                                                @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("SuperAdmin")))
+                                                {
+                                                    <input type="button" class="btn btn-info btn-sm" onclick="Edit('@item.Id','@item.Name','@item.CategoryId','@item.ImageName','@item.Publish','@item.SubCategoryId','@item.Author','@item.Description','@item.ImageAuthor')" value="@ResourceWeb.lbbtnEdit" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+                                                    <input type="button" class="btn btn-danger btn-sm" onclick="Delete('@item.Id')" value="@ResourceWeb.lbbtnDelete" />
+                                                }
+                                              
+                                            </td>
+                                        </tr>
+                                    }
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("SuperAdmin")))
+                        {
+                        <div id="LogCategories" class="tabcontent">
+                            <table id="tableCaregoryLog" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>#</td>
+                                        <td>@ResourceWeb.lbNameBook</td>
+                                        <td>@ResourceWeb.lbNameSubCategory</td>
+                                        <td>@ResourceWeb.lbNameCategory</td>
+                                        <td>@ResourceWeb.lbEvents</td>
+                                        <td>@ResourceWeb.lbDate</td>
+                                        <td>@ResourceWeb.lbNameUser</td>
+                                        <td>@ResourceWeb.lbbtnDelete</td>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @foreach (var item in Model.LogBooks)
+                                    {
+                                        <tr>
+                                            <td>#</td>
+                                            <td>@item.Book.Name</td>
+                                            <td>@item.Book.SubCategory.Name</td>
+                                            <td>@item.Book.Category.Name</td>
+                                            <td>
+                                                @switch (@item.Action)
+                                                {
+                                                    case "Create":
+                                                        <span class="badge badge-success" style="width:150px; height:25px">@item.Action</span>
+                                                        break;
+                                                    case "Delete":
+                                                        <span class="badge badge-danger" style="width:150px; height:25px">@item.Action</span>
+                                                        break;
+                                                    default:
+                                                        <span class="badge badge-warning" style="width:150px; height:25px">@item.Action</span>
+                                                        break;
+                                                }
+                                            </td>
+                                            <td>@item.Date</td>
+                                            <td>@userManager.FindByIdAsync(item.UserId.ToString()).Result?.Name</td>
+
+                                            <td>
+                                                
+                                                    <input type="button" class="btn btn-danger btn-sm" onclick="DeleteLog('@item.Id')" value="@ResourceWeb.lbbtnDelete" />
+                                                
+
+                                            </td>
+                                        </tr>
+                                    }
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        }
+
+
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog card card-success card-outline">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tittlee">@ResourceWeb.lbBtnSaveNewBook</h5>
+                <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</a>
+            </div>
+            <div class="modal-body">
+                <form asp-action="Save" asp-controller="Books" method="post"
+                      enctype="multipart/form-data" role="form">
+                    <div asp-validation-summary="All" class="text-danger">
+                    </div>
+                    <input type="text" hidden class="form-control" asp-for="NewBook.Id" id="bookId" />
+                    <div class="form-group">
+                        <label asp-for="NewBook.Name" class="control-lable">@ResourceWeb.lbNameBook</label>
+                        <input type="text" class="form-control" asp-for="NewBook.Name" id="bookName" />
+                        <span asp-validation-for="NewBook.Name" class="text-danger"></span>
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.Description" class="control-lable">@ResourceWeb.lbDescBook</label>
+                        <input type="text" class="form-control" asp-for="NewBook.Description" id="bookDesc" />
+                        <span asp-validation-for="NewBook.Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.Author" class="control-lable">@ResourceWeb.lbAuthor</label>
+                        <input type="text" class="form-control" asp-for="NewBook.Author" id="authorName" />
+                        <span asp-validation-for="NewBook.Author" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <img id="imgAuthor" hidden class="img-circle" style="width:35px;height:35px;" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.ImageAuthor" class="control-lable">@ResourceWeb.lbImgAuthor</label>
+                        <input type="file" asp-for="NewBook.ImageAuthor" class="form-control" multiple accept=".jpg, .jpeg, .png, ,.gif"  name="FilesAuthor" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.CategoryId" class="control-lable">@ResourceWeb.lbSelectCategory</label>
+                        <select class="control-lable" asp-for="NewBook.CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))" id="CategoriesList">
+                            <option value="">@ResourceWeb.lbSelectCategory</option>
+                        </select>
+                        <span asp-validation-for="NewBook.CategoryId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.SubCategoryId" class="control-lable">@ResourceWeb.lbSelectSubCategory</label>
+                        <select class="control-lable" asp-for="NewBook.SubCategoryId" asp-items="@(new SelectList(Model.SubCategories,"Id","Name"))" id="SubCategoriesList">
+                            <option value="">@ResourceWeb.lbSelectSubCategory</option>
+                        </select>
+                        <span asp-validation-for="NewBook.SubCategoryId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <img id="img" hidden class="img-circle" style="width:35px;height:35px;" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.ImageName" class="control-lable">@ResourceWeb.lbImageBook</label>
+                        <input type="file" asp-for="NewBook.ImageName" class="form-control" multiple accept=".jpg, .jpeg, .png, ,.gif" id="BookImage" name="Files" />
+                    </div>
+
+                  
+                    <div class="form-group">
+                        <label asp-for="NewBook.FileName" class="control-label">@ResourceWeb.lbPdf</label>
+                        <input type="file" asp-for="NewBook.FileName" class="form-control" name="FilesFileName" accept=".pdf" id="PdfFile" />
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="NewBook.Publish" class="control-lable">@ResourceWeb.lbPublish</label>
+                        <input type="checkbox" checked="NewBook.Publish" class="form-control" asp-for="NewBook.Publish" id="Publish" />
+                    </div>
+
+                    <div class="modal-footer-rtl" style="padding:0 15px 15px 0">
+                        <input type="submit" class="btn btn-success" value="@ResourceWeb.lbbtnSave" id="btnSave" />
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @if (!string.IsNullOrEmpty(Context.Session.GetString(Helper.msgType)))
+    {
+        if (Context.Session.GetString(Helper.msgType) == Helper.Success)
+        {
+            <script>
+
+                Swal.fire({
+                    title: '@Context.Session.GetString(Helper.tittle)',
+                    text: '@Html.Raw(@Context.Session.GetString(Helper.msg))',
+                    confirmButtonText: '@ResourceWeb.lbOk',
+                    icon: 'success'
+                });
+            </script>
+
+        }
+        else
+        {
+            <script>
+
+                Swal.fire({
+                    title: '@Context.Session.GetString(Helper.tittle)',
+                    text: '@Html.Raw(@Context.Session.GetString(Helper.msg))',
+                    confirmButtonText: '@ResourceWeb.lbOk',
+                    icon: 'error'
+                });
+            </script>
+        }
+        Context.Session.SetString(Helper.msgType, "");
+    }
+
+    <script src="~/Models/Book.js"></script>
+
+    <script>
+        let tittleEditBook = '@Html.Raw(ResourceWeb.tittleEditBook)';
+        let lbBtnEdit ='@Html.Raw(ResourceWeb.lbbtnEdit)';
+        let lbBtnSaveNewBook = '@Html.Raw(ResourceWeb.lbBtnSaveNewBook)';
+        let lbbtnSave = '@Html.Raw(ResourceWeb.lbbtnSave)';
+        let lbSure = '@Html.Raw(ResourceWeb.lbSure)';
+        let lbCantBack = '@Html.Raw(ResourceWeb.lbCantBack)';
+        let lbConfirmDelete = '@Html.Raw(ResourceWeb.lbConfirmDelete)';
+        let lbDeleteSuccess = '@Html.Raw(ResourceWeb.lbDeleteSuccess)';
+        let lbDeleteBookSuccess = '@Html.Raw(ResourceWeb.lbDeleteBookSuccess)';
+        let lbcancelButtonText = '@Html.Raw(ResourceWeb.lbcancelButtonText)';
+
+    </script>
+}

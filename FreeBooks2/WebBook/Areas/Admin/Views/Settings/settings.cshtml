@@ -1,0 +1,126 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Settings2";
+}
+
+<form role="form" asp-action="Save" asp-controller="Settings" method="post"
+      enctype="multipart/form-data" role="form">
+    <div class="card-body">
+       
+            <div asp-validation-summary="All" class="text-danger">
+            </div>
+            <input type="text" hidden class="form-control" asp-for="@Model.Id"  />
+
+            <div class="form-group">
+                <label asp-for="@Model.websiteName" class="control-lable">@ResourceWeb.lbNameSetting</label>
+                <input type="text" class="form-control" asp-for="@Model.websiteName" id="websiteName" />
+                <span asp-validation-for="@Model.websiteName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.Description" class="control-lable">@ResourceWeb.lbDescSetting</label>
+                <input type="text" class="form-control" asp-for="@Model.Description" id="websiteDesc" />
+                <span asp-validation-for="@Model.Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.Email" class="control-lable">@ResourceWeb.lbEmail</label>
+                <input type="email" class="form-control" asp-for="@Model.Email" id="email" />
+                <span asp-validation-for="@Model.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.facebookLink" class="control-lable">@ResourceWeb.lbLinkFacebook</label>
+                <input type="text" class="form-control" asp-for="@Model.facebookLink" id="Facebook" />
+                <span asp-validation-for="@Model.facebookLink" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.instagramLink" class="control-lable">@ResourceWeb.lbLinkInstagram</label>
+                <input type="text" class="form-control" asp-for="@Model.instagramLink" id="Instagram" />
+                <span asp-validation-for="@Model.instagramLink" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.twitterLink" class="control-lable">@ResourceWeb.lbLinkTwitter</label>
+                <input type="text" class="form-control" asp-for="@Model.twitterLink" id="Twitter" />
+                <span asp-validation-for="@Model.twitterLink" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.linkedinLink" class="control-lable">@ResourceWeb.lbLinkLinkedin</label>
+                <input type="text" class="form-control" asp-for="@Model.linkedinLink" id="Linkedin" />
+                <span asp-validation-for="@Model.linkedinLink" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.numberContact" class="control-lable">@ResourceWeb.lbContactNumber</label>
+                <input type="text" class="form-control" asp-for="@Model.numberContact" id="Contact" />
+                <span asp-validation-for="@Model.numberContact" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="@Model.Location" class="control-lable">@ResourceWeb.lbLinkLocation</label>
+                <input type="text" class="form-control" asp-for="@Model.Location" id="Location" />
+                <span asp-validation-for="@Model.Location" class="text-danger"></span>
+            </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Address" class="control-lable">@ResourceWeb.lbAddress</label>
+            <input type="text" class="form-control" asp-for="@Model.Address" />
+            <span asp-validation-for="@Model.Address" class="text-danger"></span>
+        </div>
+
+          
+
+            <div class="form-group">
+                <label asp-for="@Model.logo" class="control-lable">@ResourceWeb.lbLogoSetting</label>
+                <input asp-for="@Model.logo" type="file" class="form-control" multiple accept=".jpg, .jpeg, .png, ,.gif" name="Files" />
+                <span asp-validation-for="@Model.logo" class="text-danger"></span>
+
+            </div>
+
+        <div class="form-group">
+            <img id="img" src="~/Images/Setting/@Model.logo" class="img-circle" style="width:35px;height:35px;" />
+        </div>
+
+            <div class="modal-footer-rtl" style="padding:0 15px 15px 0">
+                <input type="submit" class="btn btn-success" value="@ResourceWeb.lbbtnSave" id="btnSave" />
+            </div>
+        
+    </div>
+    <!-- /.card-body -->
+
+</form>
+
+@section Scripts {
+    @if (!string.IsNullOrEmpty(Context.Session.GetString(Helper.msgType)))
+    {
+        if (Context.Session.GetString(Helper.msgType) == Helper.Success)
+        {
+            <script>
+
+                Swal.fire({
+                    title: '@Context.Session.GetString(Helper.tittle)',
+                    text: '@Html.Raw(@Context.Session.GetString(Helper.msg))',
+                    confirmButtonText: '@ResourceWeb.lbOk',
+                    icon: 'success'
+                });
+            </script>
+
+        }
+        else
+        {
+            <script>
+
+                Swal.fire({
+                    title: '@Context.Session.GetString(Helper.tittle)',
+                    text: '@Html.Raw(@Context.Session.GetString(Helper.msg))',
+                    confirmButtonText: '@ResourceWeb.lbOk',
+                    icon: 'error'
+                });
+            </script>
+        }
+        Context.Session.SetString(Helper.msgType, "");
+    }
+}

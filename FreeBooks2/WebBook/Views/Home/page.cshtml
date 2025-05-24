@@ -1,0 +1,38 @@
+﻿@using Bl.ViewModel
+
+@model ViewModelHomePage
+
+<style>
+
+    .about-us {
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+        .about-us h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-us img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .about-us p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+
+</style>
+
+
+<div class="about-us">
+    <h1>@Model.page.Tittle</h1>
+    <img src="~/Images/Page/@Model.page.ImageName" alt="صورة عن الشركة" />
+    <p>@Model.page.Desc</p>
+</div>

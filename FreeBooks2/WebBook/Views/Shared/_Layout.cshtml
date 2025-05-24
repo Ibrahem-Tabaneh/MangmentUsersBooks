@@ -1,0 +1,255 @@
+﻿@using Bl.ViewModel
+
+@model ViewModelHomePage
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Course</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="~/Web/styles/bootstrap4/bootstrap.min.css">
+<link href="~/Web/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="~/Web/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="~/Web/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="~/Web/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="~/Web/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="~/Web/styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<img src="~/images/Setting/@Model.Setting.logo" alt="">
+					<span>@Model.Setting.websiteName</span>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a asp-controller="Home" asp-action="Index">home</a></li>
+					    <li class="main_nav_item"><a  asp-controller="Home" asp-action="page" asp-route-id="1">about us</a></li>
+							<li class="main_nav_item"><a asp-controller="Home" asp-action="page" asp-route-id="2">terms us</a></li>
+							<li class="main_nav_item"><a asp-controller="Home" asp-action="page" asp-route-id="3">contact us</a></li>
+							@if(User.Identity.IsAuthenticated)
+							{
+								<li class="main_nav_item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Page</a></li>
+
+							}
+							else
+							{
+								<li class="main_nav_item"><a asp-area="Admin" asp-controller="Accounts" asp-action="Login">login</a></li>
+							}
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="~/Web/images/phone-call.svg" alt="">
+			<span>@Model.Setting.numberContact</span>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+	<!-- Menu -->
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+						<li class="menu_item menu_mm"><a asp-controller="Home" asp-action="Index">Home</a></li>
+						<li class="menu_item menu_mm"><a asp-controller="Home" asp-action="page" asp-route-id="1">About us</a></li>
+						<li class="menu_item menu_mm"><a asp-controller="Home" asp-action="page" asp-route-id="2">Terms us</a></li>
+						<li class="menu_item menu_mm"><a asp-controller="Home" asp-action="page" asp-route-id="3">Contact</a></li>
+				</ul>
+
+				<!-- Menu Social -->
+				
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+
+		<!-- Hero Slider -->
+		<div class="hero_slider_container">
+			<div class="hero_slider owl-carousel">
+
+					@foreach (var slider in Model.sliders)
+					{
+						<!-- Hero Slide -->
+						<div class="hero_slide">
+							<div class="hero_slide_background" style="background-image:url(/Images/Slider/@slider.ImageName)"></div>
+							<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+								<div class="hero_slide_content text-center">
+									<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Get your <span>Education</span> today!</h1>
+								</div>
+							</div>
+						</div>
+					}
+					
+			</div>
+
+			<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">prev</span></div>
+			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">next</span></div>
+		</div>
+
+	</div>
+
+	
+	<div class="container-fluid">
+			@RenderBody();
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+			
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+
+					<!-- Footer Column - About -->
+					<div class="col-lg-4 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="~/Images/Setting/@Model.Setting.logo" alt="">
+								<span>@Model.Setting.websiteName</span>
+							</div>
+						</div>
+
+						<p class="footer_about_text">@Model.Setting.Description</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-4 footer_col">
+						<div class="footer_column_title">Menu</div>
+						<div class="footer_column_content">
+							<ul>
+									<li class="footer_list_item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+									<li class="footer_list_item"><a asp-controller="Home" asp-action="page" asp-route-id="1">About us</a></li>
+									<li class="footer_list_item"><a asp-controller="Home" asp-action="page" asp-route-id="2">Terms us</a></li>
+									<li class="footer_list_item"><a asp-controller="Home" asp-action="page" asp-route-id="3">Contact</a></li>
+								
+							</ul>
+						</div>
+					</div>
+
+					
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-4 footer_col">
+						<div class="footer_column_title">Contact</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<a href="@Model.Setting.Location" target="_blank">
+												<img src="~/Web/images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										</a>
+									</div>
+									@Model.Setting.Address
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="~/Web/images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									@Model.Setting.numberContact
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+												<img src="~/Web/images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										
+									</div>@Model.Setting.Email
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+							<li class="menu_social_item"><a href="@Model.Setting.linkedinLink" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+							<li class="menu_social_item"><a href="@Model.Setting.instagramLink" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li class="menu_social_item"><a href="@Model.Setting.facebookLink" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="@Model.Setting.twitterLink" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="~/Web/js/jquery-3.2.1.min.js"></script>
+<script src="~/Web/styles/bootstrap4/popper.js"></script>
+<script src="~/Web/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="~/Web/plugins/greensock/TweenMax.min.js"></script>
+<script src="~/Web/plugins/greensock/TimelineMax.min.js"></script>
+<script src="~/Web/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="~/Web/plugins/greensock/animation.gsap.min.js"></script>
+<script src="~/Web/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="~/Web/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="~/Web/plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="~/Web/plugins/easing/easing.js"></script>
+<script src="~/Web/js/custom.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,453 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\migrations\\20241107111604_aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\migrations\\20241107111604_aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\servicesrepository\\servicespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\servicesrepository\\servicespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\areas\\admin\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\areas\\admin\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\viewmodel\\pageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\viewmodel\\pageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\data\\freebookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\data\\freebookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\iservicesrepositorypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\iservicesrepositorypage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\servicesrepository\\servicessetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\servicesrepository\\servicessetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\domains\\entity\\page2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|solutionrelative:domains\\entity\\page2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\viewmodel\\viewmodelhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\viewmodel\\viewmodelhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\iservicesrepositorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\iservicesrepositorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\webbook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\webbook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\servicesrepository\\servicessubcategorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\servicesrepository\\servicessubcategorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\servicesrepository\\servicesslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\servicesrepository\\servicesslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\servicesrepository\\servicescategorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\servicesrepository\\servicescategorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\servicesrepository\\servicesbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\servicesrepository\\servicesbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\irepository\\iservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\irepository\\iservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\domains\\domains.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|solutionrelative:domains\\domains.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\domains\\entity\\vwuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|solutionrelative:domains\\entity\\vwuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\domains\\entity\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|solutionrelative:domains\\entity\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\domains\\entity\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|solutionrelative:domains\\entity\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\domains\\entity\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D009EEA6-360C-4B75-91D6-949E66437D2A}|Domains\\Domains.csproj|solutionrelative:domains\\entity\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{51676BC4-2D8A-4682-A694-4D77CE4A67A8}|Bl\\Bl.csproj|solutionrelative:bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|c:\\users\\alwafa\\desktop\\project-cv\\freebooks\\freebooks2\\webbook\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9623DFCE-E4A0-421E-972C-4C53EA3E701F}|WebBook\\WebBook.csproj|solutionrelative:webbook\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241107111604_aaa.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\Migrations\\20241107111604_aaa.cs",
+              "RelativeDocumentMoniker": "Bl\\Migrations\\20241107111604_aaa.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\Migrations\\20241107111604_aaa.cs",
+              "RelativeToolTip": "Bl\\Migrations\\20241107111604_aaa.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:16:05.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebBook\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebBook\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:14:40.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServicesPage.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesPage.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\ServicesRepository\\ServicesPage.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesPage.cs",
+              "RelativeToolTip": "Bl\\IRepository\\ServicesRepository\\ServicesPage.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAADAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:36:11.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Program.cs",
+              "RelativeDocumentMoniker": "WebBook\\Program.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Program.cs",
+              "RelativeToolTip": "WebBook\\Program.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAiwDAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:36:57.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\appsettings.json",
+              "RelativeDocumentMoniker": "WebBook\\appsettings.json",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\appsettings.json",
+              "RelativeToolTip": "WebBook\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-07T09:47:08.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebBook\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebBook\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:14:32.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "WebBook\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "WebBook\\Areas\\Admin\\Controllers\\PagesController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:13:54.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\ViewModel\\PageViewModel.cs",
+              "RelativeDocumentMoniker": "Bl\\ViewModel\\PageViewModel.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\ViewModel\\PageViewModel.cs",
+              "RelativeToolTip": "Bl\\ViewModel\\PageViewModel.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:12:48.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IServicesRepositoryPage.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\IServicesRepositoryPage.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\IServicesRepositoryPage.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\IServicesRepositoryPage.cs",
+              "RelativeToolTip": "Bl\\IRepository\\IServicesRepositoryPage.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:41:14.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServicesSetting.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesSetting.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\ServicesRepository\\ServicesSetting.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesSetting.cs",
+              "RelativeToolTip": "Bl\\IRepository\\ServicesRepository\\ServicesSetting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:40:55.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Page2.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Page2.cs",
+              "RelativeDocumentMoniker": "Domains\\Entity\\Page2.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Page2.cs",
+              "RelativeToolTip": "Domains\\Entity\\Page2.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:40:05.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FreeBookDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\Data\\FreeBookDbContext.cs",
+              "RelativeDocumentMoniker": "Bl\\Data\\FreeBookDbContext.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\Data\\FreeBookDbContext.cs",
+              "RelativeToolTip": "Bl\\Data\\FreeBookDbContext.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAEMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:35:41.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ViewModelHomePage.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\ViewModel\\ViewModelHomePage.cs",
+              "RelativeDocumentMoniker": "Bl\\ViewModel\\ViewModelHomePage.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\ViewModel\\ViewModelHomePage.cs",
+              "RelativeToolTip": "Bl\\ViewModel\\ViewModelHomePage.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:54:26.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IServicesRepositoryLog.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\IServicesRepositoryLog.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\IServicesRepositoryLog.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\IServicesRepositoryLog.cs",
+              "RelativeToolTip": "Bl\\IRepository\\IServicesRepositoryLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:43:15.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ServicesSubCategoryLog.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesSubCategoryLog.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\ServicesRepository\\ServicesSubCategoryLog.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesSubCategoryLog.cs",
+              "RelativeToolTip": "Bl\\IRepository\\ServicesRepository\\ServicesSubCategoryLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:36:19.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServicesSlider.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesSlider.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\ServicesRepository\\ServicesSlider.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesSlider.cs",
+              "RelativeToolTip": "Bl\\IRepository\\ServicesRepository\\ServicesSlider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:36:15.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WebBook.csproj",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\WebBook.csproj",
+              "RelativeDocumentMoniker": "WebBook\\WebBook.csproj",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\WebBook.csproj",
+              "RelativeToolTip": "WebBook\\WebBook.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-07T10:24:32.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ServicesCategoryLog.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesCategoryLog.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\ServicesRepository\\ServicesCategoryLog.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesCategoryLog.cs",
+              "RelativeToolTip": "Bl\\IRepository\\ServicesRepository\\ServicesCategoryLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:36:07.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ServicesBook.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesBook.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\ServicesRepository\\ServicesBook.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\ServicesRepository\\ServicesBook.cs",
+              "RelativeToolTip": "Bl\\IRepository\\ServicesRepository\\ServicesBook.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:36:00.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IServicesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\IServicesRepository.cs",
+              "RelativeDocumentMoniker": "Bl\\IRepository\\IServicesRepository.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\IRepository\\IServicesRepository.cs",
+              "RelativeToolTip": "Bl\\IRepository\\IServicesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:35:54.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "VwUser.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\VwUser.cs",
+              "RelativeDocumentMoniker": "Domains\\Entity\\VwUser.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\VwUser.cs",
+              "RelativeToolTip": "Domains\\Entity\\VwUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:35:30.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Slider.cs",
+              "RelativeDocumentMoniker": "Domains\\Entity\\Slider.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Slider.cs",
+              "RelativeToolTip": "Domains\\Entity\\Slider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:35:26.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Helper.cs",
+              "RelativeDocumentMoniker": "Domains\\Entity\\Helper.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Helper.cs",
+              "RelativeToolTip": "Domains\\Entity\\Helper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:35:24.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Category.cs",
+              "RelativeDocumentMoniker": "Domains\\Entity\\Category.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Entity\\Category.cs",
+              "RelativeToolTip": "Domains\\Entity\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:35:23.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Domains.csproj",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Domains.csproj",
+              "RelativeDocumentMoniker": "Domains\\Domains.csproj",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Domains\\Domains.csproj",
+              "RelativeToolTip": "Domains\\Domains.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-07T10:18:19.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Bl.csproj",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\Bl.csproj",
+              "RelativeDocumentMoniker": "Bl\\Bl.csproj",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\Bl\\Bl.csproj",
+              "RelativeToolTip": "Bl\\Bl.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-07T10:11:07.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "WebBook\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\alwafa\\Desktop\\Project-Cv\\FreeBooks\\FreeBooks2\\WebBook\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "WebBook\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T09:51:04.571Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
