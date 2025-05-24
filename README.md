@@ -11,6 +11,11 @@ Admin:1:-Full CRUD functionality for books, pages, sliders, categories, and sub-
 
 Users: can download books as PDF.
 
+Users Information:
+Admin:ibrahemtabaneh@gmail.com
+User:Customer@domain.com
+Password for all:123456
+
 Interactive single-page experience using JavaScript (no page reloads).
 
 🛠️ Technologies used:
